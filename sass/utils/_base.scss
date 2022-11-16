@@ -26,10 +26,21 @@ button {
     padding-bottom: 94px;
 }
 .container {
-    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+   
+    @include mobile {
+        width: 450px
+    }
 
+    @include tablet {
+        width: 738px
+    }
+
+    @include desktop {
+        width: 1200px
+    }
+  
     /*outline: 2px solid red;
   outline-offset: -2px;*/
 }
