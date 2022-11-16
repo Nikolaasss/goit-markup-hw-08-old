@@ -1,0 +1,29 @@
+.customers__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.customers__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: #afb1b8;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border-color var(--animation), color var(--animation);
+&:hover,
+&:focus {
+        color: var(--accent-txt-cl);
+        border-color: var(--accent-txt-cl);
+    }
+}
+
+.customers__icon {
+    fill: currentColor;
+}
+
