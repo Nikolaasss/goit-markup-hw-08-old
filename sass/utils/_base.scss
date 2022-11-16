@@ -25,23 +25,23 @@ button {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .container {
     margin: 0 auto;
     padding: 0 15px;
-   
-    @include mobile {
-        width: 450px
-    }
 
-    @include tablet {
-        width: 738px
+    @media screen and (min-width: 480px) {
+        width: 450px;
     }
+@media screen and (min-width: 768px) {
+    width: 738px;
+}
 
-    @include desktop {
-        width: 1200px
-    }
-  
-    /*outline: 2px solid red;
+@media screen and (min-width: 1200px) {
+    width: 1200px;
+}
+
+      /* outline: 2px solid red;
   outline-offset: -2px;*/
 }
 .list {

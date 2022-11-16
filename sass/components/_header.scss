@@ -10,17 +10,27 @@
 }
 .nav {
     margin-right: auto;
-}
+    }
 .nav__list,
 .contacts__list {
     display: flex;
     gap: 50px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
+
 .header__logo {
     font-family: 'Raleway';
     font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+@media screen and (min-width: 1200px) {
     font-size: 26px;
-    line-height: 1.19;
+        line-height: 1.19;
+}
+
     color: var(--accent-txt-cl);
     margin-right: 93px;
 &--accent {

@@ -50,7 +50,7 @@ button {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  /*outline: 2px solid red;
+  /* outline: 2px solid red;
   outline-offset: -2px;*/
 }
 @media screen and (min-width: 480px) {
@@ -140,14 +140,27 @@ p {
   display: flex;
   gap: 50px;
 }
+@media screen and (max-width: 767px) {
+  .nav__list,
+.contacts__list {
+    display: none;
+  }
+}
 
 .header__logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--accent-txt-cl);
   margin-right: 93px;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .header__logo--accent {
   color: #000000;
