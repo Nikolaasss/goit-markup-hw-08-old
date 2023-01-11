@@ -8,24 +8,7 @@
     display: flex;
     align-items: center;
 }
-.menu__button{
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    
-}
-.menu__button .icon__close {
-    display: none;
-}
-.menu__button.is-open .icon__close{
-    display: block;
-}
-.menu__button.is-open .icon__menu{
-    display: none;
-}
-.nav {
+ .nav {
     margin-right: auto;
     }
 .nav__list,
